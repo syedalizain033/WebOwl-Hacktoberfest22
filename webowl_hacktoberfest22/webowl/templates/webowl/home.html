@@ -1,0 +1,15 @@
+<head>
+    <title>WebOwl</title>
+</head>
+
+<body>
+    <form method="POST">
+        {{ form }}
+        {% csrf_token %}
+        <input type="submit">
+    </form>
+
+    {% if url %}
+    <h5>Result: "{{url}}"</h5>
+    {% endif %}
+</body>
