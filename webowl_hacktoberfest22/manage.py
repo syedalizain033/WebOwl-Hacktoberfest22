@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+#call function
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'webowl_hacktoberfest22.settings')
@@ -17,6 +17,6 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
+# program start's from here
 if __name__ == '__main__':
     main()
